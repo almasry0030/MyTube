@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>رفع فيديو - MyTube</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
   <header>
-    <h1>📤 رفع فيديو جديد</h1>
+    <h1>رفع فيديو جديد</h1>
     <nav>
       <a href="index.html">الرئيسية</a>
       <a href="channel.html">قناتي</a>
-      <a href="dashboard.html">لوحة التحكم</a>
       <a href="login.html">تسجيل الدخول</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <form id="upload-form">
-        <label>📄 عنوان الفيديو</label><br>
-        <input type="text" id="title" placeholder="مثلاً: شرح تطبيق" required><br><br>
+    <form id="upload-form">
+      <label>عنوان الفيديو</label><br>
+      <input type="text" id="title" required><br><br>
 
-        <label>📝 وصف الفيديو</label><br>
-        <textarea id="description" rows="4" placeholder="اكتب وصفًا للفيديو..."></textarea><br><br>
+      <label>اختر ملف الفيديو</label><br>
+      <input type="file" id="video-file" accept="video/*" required><br><br>
 
-        <label>🎥 اختر ملف الفيديو</label><br>
-        <input type="file" id="video-file" accept="video/*" required><br><br>
-
-        <button type="submit">رفع الفيديو</button>
-      </form>
-    </section>
+      <button type="submit">📤 رفع الفيديو</button>
+    </form>
   </main>
 
   <footer>
     <p>© 2025 ماي تيوب</p>
   </footer>
 
-  <script src="assets/main.js"></script>
+  <script src="assets/upload.js"></script>
 </body>
 </html>
