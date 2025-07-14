@@ -30,4 +30,4 @@ document.getElementById("upload-form")?.addEventListener("submit", async (e) => 
   } catch (error) {
     alert("❌ فشل رفع الفيديو: " + error.message);
   }
-});
+})
