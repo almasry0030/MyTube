@@ -1,45 +1,32 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تسجيل الدخول - MyTube</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-<script>
-document.getElementById("login-form")?.addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("الزر شغال");
-});
-</script>
-  <body>
+<body>
 
   <header>
-    <h1>تسجيل الدخول إلى ماي تيوب</h1>
+    <h1>تسجيل الدخول</h1>
     <nav>
       <a href="index.html">الرئيسية</a>
-      <a href="login.html">تسجيل الدخول</a>
+      <a href="upload.html">رفع فيديو</a>
+      <a href="channel.html">قناتي</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <form id="login-form">
-        <h2>تسجيل الدخول</h2>
-        <input type="email" placeholder="البريد الإلكتروني" required /><br />
-        <input type="password" placeholder="كلمة المرور" required /><br />
-        <button type="submit">دخول</button>
-      </form>
+    <form id="login-form">
+      <label>البريد الإلكتروني</label><br>
+      <input type="email" required><br><br>
 
-      <hr />
+      <label>كلمة المرور</label><br>
+      <input type="password" required><br><br>
 
-      <form id="register-form">
-        <h2>إنشاء حساب جديد</h2>
-        <input type="email" placeholder="البريد الإلكتروني" required /><br />
-        <input type="password" placeholder="كلمة المرور" required /><br />
-        <button type="submit">تسجيل</button>
-      </form>
-    </section>
+      <button type="submit">تسجيل الدخول</button>
+    </form>
   </main>
 
   <footer>
