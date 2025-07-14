@@ -1,41 +1,68 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ماي تيوب - MyTube</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta charset="UTF-8">
+  <title>ماي تيوب</title>
+  <style>
+    body { margin: 0; font-family: Arial, Tahoma, sans-serif; background: #f9f9f9; }.navbar {
+      background: #ff0000;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }.navbar.logo { font-size: 1.5em; font-weight: bold; display: flex; align-items: center;}.navbar.logo span { margin-left: 8px; }.navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }.container { max-width: 900px; margin: 30px auto; }.videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }.video-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px #0001;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }.video-card:hover { transform: scale(1.03);}.video-thumb {
+      width: 100%;
+      height: 120px;
+      background: #ddd;
+      display: block;
+    }.video-info { padding: 10px; }.video-title { font-size: 1.1em; font-weight: bold; margin-bottom: 5px;}.video-desc { color: #555; font-size: 0.95em;}
+  </style>
 </head>
 <body>
-
-  <header>
-    <h1>🎬 ماي تيوب</h1>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="upload.html">رفع فيديو</a>
-      <a href="dashboard.html">لوحة التحكم</a>
-      <a href="login.html">تسجيل الدخول</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="welcome">
-      <h2>مرحبًا بك في ماي تيوب</h2>
-      <p>منصة لمشاركة الفيديوهات والبث المباشر.</p>
-    </section>
-
-    <section class="videos">
-      <h3>أحدث الفيديوهات</h3>
-      <div id="video-list">
-        <!-- هنا هتظهر الفيديوهات تلقائيًا -->
+  <div class="navbar">
+    <div class="logo">🎬 <span>ماي تيوب</span></div>
+    <div>
+      <a href="#">الرئيسية</a>
+      <a href="#">رفع فيديو</a>
+      <a href="#">لوحة التحكم</a>
+      <a href="#">تسجيل الدخول</a>
+    </div>
+  </div>
+  <div class="container">
+    <h2>أحدث الفيديوهات</h2>
+    <div class="videos-grid">
+      <div class="video-card">
+        <img class="video-thumb" src="https://i.ytimg.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="Video">
+        <div class="video-info">
+          <div class="video-title">عنوان الفيديو</div>
+          <div class="video-desc">وصف مختصر للفيديو يبان هنا</div>
+        </div>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 ماي تيوب - جميع الحقوق محفوظة</p>
-  </footer>
-
-  <script src="assets/main.js"></script>
+      <!-- كرر الكارت ده لأي فيديو جديد -->
+      <div class="video-card">
+        <img class="video-thumb" src="https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg" alt="Video">
+        <div class="video-info">
+          <div class="video-title">فيديو آخر</div>
+          <div class="video-desc">وصف مختصر للفيديو الثاني</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
